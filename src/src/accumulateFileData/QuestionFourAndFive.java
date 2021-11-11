@@ -9,7 +9,6 @@ package accumulateFileData;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-
 public class QuestionFourAndFive {
 	public static void main(String args[]) {
 		Scanner inFile = null;
@@ -28,7 +27,6 @@ public class QuestionFourAndFive {
 			while (inFile.hasNextLine()) {
 				String line = inFile.nextLine();
 				Scanner inLine = new Scanner(line);
-					 // Do something with inLine
 				System.out.println(returnInt(inLine));
 			}
 		}

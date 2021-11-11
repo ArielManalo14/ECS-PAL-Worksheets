@@ -3,31 +3,30 @@
  * 11/11/21
  * CSC15 PAL Worksheet
  * Accumulate file data
- * Question1
+ * Question2
  */
 package accumulateFileData;
 import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
-public class QuestionOne {
-	//accumulate file data questions 1-3
+public class QuestionTwo {
 	public static void main(String args[]) {
 		Scanner in = null;
-		
 		try {
-			//question 1
-			File file = new File("scannerpractice.txt");
-			
+			File file = new File("numberspractice.txt");
 			in = new Scanner(file);
 		}
 		catch (FileNotFoundException e) {
 		 System.out.println("File could not be opened");
 		}
 		if (in != null) {
+			int x = 0;
 			while(in.hasNextLine()) {
-				//question 1
-				System.out.println(in.nextLine());
+				//question 2
+				x = in.nextInt() + x;		
 			}
-		}	
+			System.out.print(x);
+		}
 	}
 }
+
